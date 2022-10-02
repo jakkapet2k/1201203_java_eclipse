@@ -22,7 +22,7 @@ public class StudentMarkMain {
 		System.out.println("Grade : "+grade);
 		
 		StudentMark student = new StudentMark();
-		
+		 
 		System.out.println("Before Student : "+student);
 		System.out.println("After Student.toString : "+student.toString());
 		System.out.println("ID : " +student.id);
