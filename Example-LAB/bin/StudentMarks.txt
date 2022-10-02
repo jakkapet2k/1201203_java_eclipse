@@ -1,0 +1,3 @@
+1 ) SID : 64011211 Name : jakkaet Sername : ladnok Mark : 80
+2 ) SID : 64011212 Name : kanoknan Sername : s Mark : 4
+3 ) SID : 64011213 Name : chanakan Sername : m Mark : 20
