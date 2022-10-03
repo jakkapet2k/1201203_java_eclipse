@@ -24,7 +24,6 @@ public class WriteFile {
 			bw = new BufferedWriter(new FileWriter(fileName));
 			bw.write(studentId+","+studentName);
 			bw.flush();
-			
 			bw.close();
 			
 		}catch(IOException ex) {

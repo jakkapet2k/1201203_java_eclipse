@@ -43,7 +43,7 @@ public class MainMenu extends JPanel implements ActionListener {
 		JButton exitBtn = new JButton(exitPro);
 
 		addBtn.addActionListener(this);
-		//editBtn.addActionListener(this);
+		editBtn.addActionListener(this);
 		//delBtn.addActionListener(this);
 		//viewBtn.addActionListener(this);
 		exitBtn.addActionListener(this);
@@ -82,23 +82,21 @@ public class MainMenu extends JPanel implements ActionListener {
 		}else if(acionCommand.equals(editProduct)) {
 			System.out.println("equals " + editProduct);
 			
-			addForm.setVisible(true);
+			editForm.setVisible(true);
 		}else if(acionCommand.equals(delProduct)) {
 			System.out.println("equals " + delProduct);
 			
-			addForm.setVisible(true);
+//			delForm.setVisible(true);
 		}else if(acionCommand.equals(viewProduct)) {
 			System.out.println("equals " + viewProduct);
 			
-			addForm.setVisible(true);
+//			viewForm.setVisible(true);
 		}
 		else if (acionCommand.equals(exitPro)) {
 			System.out.println("equals " + exitPro);
 			System.exit(0);
 		}
 			
-		
-
 	}
 
 }

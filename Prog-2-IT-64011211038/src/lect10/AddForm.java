@@ -116,9 +116,9 @@ public class AddForm extends JDialog implements ActionListener {
 				int proId = Integer.parseInt(idTexts.getText());
 				String ProName = nameTexts.getText();
 				String Prodetails = detailsTexts.getText();
-				int proprice = Integer.parseInt(idTexts.getText());
-				int prostock = Integer.parseInt(idTexts.getText());
-				WriteFile WF = new WriteFile(proId,ProName,Prodetails,proprice,prostock);
+				int proprice = Integer.parseInt(priceTexts.getText());
+				int prostock = Integer.parseInt(stockTexts.getText());
+				ReadWriteFile WF = new ReadWriteFile(proId,ProName,Prodetails,proprice,prostock,true);
 
 			} catch (Exception e) {
 				e.printStackTrace();
