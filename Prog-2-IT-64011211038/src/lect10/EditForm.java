@@ -108,7 +108,7 @@ public class EditForm extends JDialog implements ActionListener {
 
         System.out.println("EditProductDialog() done!");
     }
-
+    
     public void actionPerformed(ActionEvent evt) {
         String acionCommand = evt.getActionCommand();
 
@@ -158,9 +158,9 @@ public class EditForm extends JDialog implements ActionListener {
                         GoodsObj.setPrice(proprice);
                         GoodsObj.setStock(prostock);
                         ck = true;
-
+                                
                     }
-
+                    
                     GoodsArr[i] = GoodsObj;
 
                 }

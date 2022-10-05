@@ -8,7 +8,7 @@ public class Main {
 	private static void menuShowGUI() {
 		JFrame frame = new JFrame("GOODS");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.add(new MainMenu(frame));
+		frame.add(new MainMenu(frame));   
 		frame.pack();
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);

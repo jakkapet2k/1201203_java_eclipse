@@ -36,7 +36,7 @@ public class ReadWriteFile {
     }
 
     public ReadWriteFile(int proId, String proName, String prodetails, int proprice, int prostock,boolean booLean) {
-        
+                
         System.out.println("AddProduct!!");
         String fileName = "Files/Goods.csv";
         BufferedWriter bw = null;
@@ -52,7 +52,7 @@ public class ReadWriteFile {
             ex.printStackTrace();
         }
 
-   
+        
     }
 
 

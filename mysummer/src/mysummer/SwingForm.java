@@ -4,18 +4,15 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class SwingForm {
-	public static void buttonPressed(String strId) {
-		System.out.println("strId : " + strId);
-		try {
-			int id = Integer.parseInt(strId);
-			System.out.println("ID : " + id);
-		} catch (NumberFormatException ex) {
-			ex.printStackTrace();
-		}
 
-	}
 
+public class SwingForm extends JDialog implements ActionListener {
+
+	private static final String test = "test";
+
+	private static final String bt_str = "Submit";
+	
+	
 	public static void main(String[] arg) {
 		JFrame frame = new JFrame("SwingFrom");
 
@@ -27,27 +24,36 @@ public class SwingForm {
 		frame.getContentPane().add(lbId);
 
 		JLabel lbout = new JLabel("s");
-		lbout.setBounds(60, 60, lbout.getPreferredSize().width, 					lbout.getPreferredSize().height);
+		lbout.setBounds(60, 60, lbout.getPreferredSize().width, lbout.getPreferredSize().height);
 		frame.getContentPane().add(lbId);
 
-		JTextField textId = new JTextField(11);
+		SwingForm textId = new JTextField(11);
 		textId.setBounds(150, 50, textId.getPreferredSize().width, textId.getPreferredSize().height);
 		frame.getContentPane().add(textId);
 
-		JButton btSubmit = new JButton("Submit");
+		JButton btSubmit = new JButton(test);
 		btSubmit.setBounds(50, 150, btSubmit.getPreferredSize().width, btSubmit.getPreferredSize().height);
 		frame.getContentPane().add(btSubmit);
 
-		btSubmit.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent ev) {
-				String i = (textId.getText());
-				System.out.println("ID : " + i);
-				
-
-			}
-		});
 		frame.pack();
 		frame.setVisible(true);
 	}
+
+
+	@Override
+	public void actionPerformed(ActionEvent evt) {
+		String acionCommand = evt.getActionCommand();
+		if (acionCommand.equals(test)) {
+			System.out.println("actionCommand : " + test);
+				String dataShow = textId.getText();
+				Swingtest2 sho = new Swingtest2(dataShow);
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+
+		}
+
+}
 
 }

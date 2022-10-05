@@ -105,7 +105,7 @@ public class AddForm extends JDialog implements ActionListener {
 		System.out.println("AddProductDialog() done!");
 
 	}
-
+	
 	public void actionPerformed(ActionEvent evt) {
 		String acionCommand = evt.getActionCommand();
 
