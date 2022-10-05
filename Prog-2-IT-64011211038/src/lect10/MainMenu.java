@@ -44,7 +44,7 @@ public class MainMenu extends JPanel implements ActionListener {
 
 		addBtn.addActionListener(this);
 		editBtn.addActionListener(this);
-		//delBtn.addActionListener(this);
+		delBtn.addActionListener(this);
 		//viewBtn.addActionListener(this);
 		exitBtn.addActionListener(this);
 
@@ -74,7 +74,7 @@ public class MainMenu extends JPanel implements ActionListener {
 
 	public void actionPerformed(ActionEvent evt) {
 		String acionCommand = evt.getActionCommand();
-		System.out.println("actionCommand : "+addProduct);
+		System.out.println("actionCommand : "+headerLabel);
 		if (acionCommand.equals(addProduct)) {
 			System.out.println("equals " + addProduct);
 			
@@ -86,7 +86,7 @@ public class MainMenu extends JPanel implements ActionListener {
 		}else if(acionCommand.equals(delProduct)) {
 			System.out.println("equals " + delProduct);
 			
-//			delForm.setVisible(true);
+			delForm.setVisible(true);
 		}else if(acionCommand.equals(viewProduct)) {
 			System.out.println("equals " + viewProduct);
 			

@@ -15,19 +15,7 @@ public class EditForm extends JDialog implements ActionListener {
     public static final int NAME_1ST_LINE = 0;
     public static final int ID_COLUMN = 0;
 
-    public static int searchStringArray(String[] arr, String str) {
-        int index = -1;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i].equals(str)) {
-                index = i;
-                break;
-            }
-        }
-
-        return index;
-    }
-
-    private static final String editProduct = "Update";
+    private static final String editProduct = "Edit";
     private static final String cancel = "Cancel";
 
     private static final int width = 400;
@@ -45,7 +33,7 @@ public class EditForm extends JDialog implements ActionListener {
         Container pane = getContentPane();
         pane.setLayout(null);
 
-        JLabel editProductLabel = new JLabel("Update");
+        JLabel editProductLabel = new JLabel("Edit");
         JLabel productId = new JLabel("ID : ");
         JLabel productName = new JLabel("Name:");
         JLabel productDetails = new JLabel("Details:");
@@ -118,7 +106,7 @@ public class EditForm extends JDialog implements ActionListener {
         setLocationRelativeTo(null);
         setVisible(false);
 
-        System.out.println("AddProductDialog() done!");
+        System.out.println("EditProductDialog() done!");
     }
 
     public void actionPerformed(ActionEvent evt) {
