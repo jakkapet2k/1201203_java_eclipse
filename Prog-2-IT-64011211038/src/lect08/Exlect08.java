@@ -19,7 +19,7 @@ public class Exlect08 {
 		return index;
 	}
 
-// ==================== min ============================
+	// ==================== main ============================
 	public static void main(String[] args) {
 		// add file
 		String enrollFile = "src/lect08/enroll.csv";
