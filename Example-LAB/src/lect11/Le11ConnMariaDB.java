@@ -26,8 +26,8 @@ public class Le11ConnMariaDB {
 		try {
 
 			connection = DriverManager.getConnection(
-					"jdbc:mariadb://202.28.34.205:3306/test", 
-					"your-username", "your-password");
+					"jdbc:mariadb://202.28.34.205:3306/db64011211038", 
+					"64011211038", "64011211038");
 
 		} catch (SQLException e) {
 

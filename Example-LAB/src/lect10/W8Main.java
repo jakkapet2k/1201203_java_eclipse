@@ -7,7 +7,7 @@ public class W8Main {
 	/**
 	 * Create the GUI and show it. For thread safety, this method should be invoked
 	 * from the event dispatch thread.
-	 */	
+	 */
 	private static void createAndShowGUI() {
 		// Create and set up the window.
 		JFrame frame = new JFrame("GUI Mini Scm");
@@ -35,6 +35,6 @@ public class W8Main {
 			}
 		});
 	}
-	
+
 
 }

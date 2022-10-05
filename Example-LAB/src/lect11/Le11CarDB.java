@@ -32,7 +32,7 @@ public class Le11CarDB {
 			String updateSql = "UPDATE CAR SET MODEL='" + model + "', MAKE='" + make + "' WHERE PLATE=" + plate;
 			System.out.println("updateSql:" + updateSql);
 
-			Le11ConnOracleDB connDB = new Le11ConnOracleDB();
+			Le11ConnMariaDB connDB = new Le11ConnMariaDB();
 			Connection con = connDB.getConnection();
 
 			Statement stmnt = null;
@@ -61,7 +61,7 @@ public class Le11CarDB {
 			String deleteSql = "DELETE FROM CAR WHERE PLATE=" + plate;
 			System.out.println("deleteSql:" + deleteSql);
 
-			Le11ConnOracleDB connDB = new Le11ConnOracleDB();
+			Le11ConnMariaDB connDB = new Le11ConnMariaDB();
 			Connection con = connDB.getConnection();
 
 			Statement stmnt = null;
@@ -89,7 +89,7 @@ public class Le11CarDB {
 			String searchSql = "SELECT * FROM CAR WHERE PLATE=" + plate;
 			System.out.println("selectSql:" + searchSql);
 
-			Le11ConnOracleDB connDB = new Le11ConnOracleDB();
+			Le11ConnMariaDB connDB = new Le11ConnMariaDB();
 			Connection con = connDB.getConnection();
 
 			Statement stmnt = null;
@@ -130,7 +130,7 @@ public class Le11CarDB {
 					+ "')";
 			System.out.println("selectSql:" + insertSql);
 
-			Le11ConnOracleDB connDB = new Le11ConnOracleDB();
+			Le11ConnMariaDB connDB = new Le11ConnMariaDB();
 			Connection con = connDB.getConnection();
 
 			Statement stmnt = null;
@@ -155,7 +155,7 @@ public class Le11CarDB {
 
 		Vector<Le11Car> cars = new Vector();
 
-		Le11ConnOracleDB connDB = new Le11ConnOracleDB();
+		Le11ConnMariaDB connDB = new Le11ConnMariaDB();
 		Connection con = connDB.getConnection();
 
 		Statement stmnt = null;

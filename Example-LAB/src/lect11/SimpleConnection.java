@@ -17,7 +17,7 @@ public class SimpleConnection {
 
 			Connection  connection = DriverManager.getConnection(
 					"jdbc:mariadb://202.28.34.205:3306/test", 
-					"your-username", "your-password");
+					"64011211038", "64011211038");
 			System.out.println("connection:" + connection);
 			if (connection != null) {
 				System.out.println("You made it, take control your database now!");

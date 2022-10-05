@@ -11,19 +11,20 @@ public class PanelTest {
 	
 	public static void main(String[] args) {
 		
-		JFrame frame = new JFrame("Panel Test");
+		JFrame frame = new JFrame("MyPanel Test");
+		frame.setLocation(200,200);
 		frame.setOpacity(1);
 		frame.setBackground(Color.RED);
-		frame.setPreferredSize(new Dimension(500, 400));
+		frame.setPreferredSize(new Dimension(700, 500));
 		frame.getContentPane().setLayout(null);
-		frame.getContentPane().setBackground(Color.YELLOW);
-		frame.getContentPane().setBounds(10, 10, 400, 300);
+		frame.getContentPane().setBackground(Color.green);
+		frame.getContentPane().setBounds(50, 50, 400, 300);
 		JPanel panel = new JPanel();
 		panel.setLayout(null);
 		panel.setOpaque(true);
 		panel.setPreferredSize(new Dimension(400, 300));
-		panel.setBounds(0, 0, 400,300);
-		panel.setBackground(Color.MAGENTA);
+		panel.setBounds(50, 50, 400,300);
+		panel.setBackground(Color.darkGray);
 		String strLabel = "Label in Panel Test";
 		JLabel label = new JLabel(strLabel);
 		label.setOpaque(true);

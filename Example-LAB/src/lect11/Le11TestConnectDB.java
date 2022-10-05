@@ -11,6 +11,7 @@ public class Le11TestConnectDB {
 		// Le11ConnOracleDB connDB = new Le11ConnOracleDB();
 		Le11ConnMariaDB connDB = new Le11ConnMariaDB();
 		Connection con = connDB.getConnection();
+		System.out.println("plass any key ...");
 		Scanner scanner = new Scanner(System.in);
 		scanner.nextLine();
 		if(con!=null) {

@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 public class W8MainMenu extends JPanel implements ActionListener {
 	
 	private static final String mainString = "Main Menu";
-	private static final String addString = "Add Student";
+	private static final String addString = "MyAdd Student";
 	private static final String viewString = "View Students";
 	private static final String exitString = "Exit";
 
@@ -20,7 +20,8 @@ public class W8MainMenu extends JPanel implements ActionListener {
 	private static final int frameHeight = 300;
 
 	W8AddForm addForm;
-	
+	W8EditFrom editForm;
+
 
 	public W8MainMenu(JFrame frame) {
 
@@ -29,7 +30,7 @@ public class W8MainMenu extends JPanel implements ActionListener {
 
 		// create a dialog for adding student
 		addForm = new W8AddForm(frame);
-
+		editForm = new W8EditFrom (frame);
 		// define size of container, i.e. pane
 		int panelWidth = 400;
 		int panelHeight = 200;
@@ -37,7 +38,7 @@ public class W8MainMenu extends JPanel implements ActionListener {
 		setLayout(null);
 
 		// create dialogue label
-		JLabel mainLabel = new JLabel(mainString);
+		JLabel mainLabel = new JLabel("Main Menu");
 		// create buttons
 		JButton addBtn = new JButton(addString);
 		JButton viewBtn = new JButton(viewString);
@@ -52,7 +53,7 @@ public class W8MainMenu extends JPanel implements ActionListener {
 		add(mainLabel);
 		add(addBtn);
 		add(viewBtn);
-		add(exitBtn);	
+		add(exitBtn);
 
 		// set sizes and positions for label and buttons
 		Dimension size = mainLabel.getPreferredSize();
@@ -76,10 +77,11 @@ public class W8MainMenu extends JPanel implements ActionListener {
 			addForm.setVisible(true);
 		} else if (actionCommand.equals(viewString)) {
 			System.out.println("equals " + viewString);
+			editForm.setVisible(true);
 			//ReadStudents.viewStudents();
 		} else if (actionCommand.equals(exitString)) {
 			System.out.println("equals " + exitString);
 			System.exit(0);
+		}
 	}
-	}
-}	
+}

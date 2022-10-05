@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JDialog;
 import javax.swing.JTextField;
 
-public class W8AddForm extends JDialog implements ActionListener {
+public class W8EditFrom extends JDialog implements ActionListener {
 
 	private static final int width = 400;
 	private static final int height = 200;
@@ -18,10 +18,10 @@ public class W8AddForm extends JDialog implements ActionListener {
 	JTextField surnameTxt;
 	JTextField markTxt;
 
-	private static final String addString = "Add";
+	private static final String addString = "Edit";
 	private static final String cancelString = "Cancel";
 
-	public W8AddForm(JFrame frame) {
+	public W8EditFrom(JFrame frame) {
 		super(frame, true);
 
 		// Create pane as container
@@ -30,7 +30,7 @@ public class W8AddForm extends JDialog implements ActionListener {
 		pane.setLayout(null);
 
 		// create labels
-		JLabel addStudentLabel = new JLabel("Add Student");
+		JLabel addStudentLabel = new JLabel("Edit From");
 		JLabel idLabel = new JLabel("ID:");
 		JLabel nameLabel = new JLabel("Name:");
 		JLabel surnameLabel = new JLabel("Surname:");
@@ -138,4 +138,5 @@ public class W8AddForm extends JDialog implements ActionListener {
 			setVisible(false);
 		}
 	}
-}	
+
+}
