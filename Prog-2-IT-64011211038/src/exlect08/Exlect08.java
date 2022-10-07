@@ -1,4 +1,4 @@
-package lect08;
+package exlect08;
 
 public class Exlect08 {
 
@@ -22,9 +22,9 @@ public class Exlect08 {
 	// ==================== main ============================
 	public static void main(String[] args) {
 		// add file
-		String enrollFile = "src/lect08/enroll.csv";
-		String aswerFile = "src/lect08/midterm-answer.csv";
-		String correcredFile = "src/lect08/corrected-answers.csv";
+		String enrollFile = "src/exlect08/enroll.csv";
+		String aswerFile = "src/exlect08/midterm-answer.csv";
+		String correcredFile = "src/exlect08/corrected-answers.csv";
 
 		// Read file to method ReadTextFile
 		String[] enrollArray = ReadTextFile.readTextFile(enrollFile);

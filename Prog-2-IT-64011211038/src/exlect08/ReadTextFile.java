@@ -1,4 +1,4 @@
-package lect08;
+package exlect08;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
