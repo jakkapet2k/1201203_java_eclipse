@@ -1,11 +1,11 @@
-package lect11;
+package AdminGoods;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class Le11ConnMariaDB {
+public class ConnMariaDB {
 	public Connection getConnection() {
 
 		System.out.println("-------- MySQL DB JDBC Connection Testing ------");
@@ -26,7 +26,7 @@ public class Le11ConnMariaDB {
 		try {
 
 			connection = DriverManager.getConnection(
-					"jdbc:mariadb://202.28.34.205:3306/test", 
+					"jdbc:mariadb://202.28.34.205:3306/db64011211038", 
 					"64011211038", "64011211038");
 
 		} catch (SQLException e) {

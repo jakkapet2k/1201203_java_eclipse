@@ -4,15 +4,12 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-
-
 public class SwingForm extends JDialog implements ActionListener {
 
 	private static final String test = "test";
 
 	private static final String bt_str = "Submit";
-	
-	
+
 	public static void main(String[] arg) {
 		JFrame frame = new JFrame("SwingFrom");
 
@@ -39,7 +36,6 @@ public class SwingForm extends JDialog implements ActionListener {
 		frame.setVisible(true);
 	}
 
-
 	@Override
 	public void actionPerformed(ActionEvent evt) {
 		String acionCommand = evt.getActionCommand();
@@ -48,12 +44,10 @@ public class SwingForm extends JDialog implements ActionListener {
 				String dataShow = textId.getText();
 				Swingtest2 sho = new Swingtest2(dataShow);
 
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
 
 		}
 
-}
+	}
+
 
 }
