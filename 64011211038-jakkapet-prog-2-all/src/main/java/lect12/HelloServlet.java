@@ -28,6 +28,8 @@ public class HelloServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("week13.HelloServlet Served at: ").append(request.getContextPath());
+		Le11TestConnectDB.testConnection();
+
 	}
 
 	/**

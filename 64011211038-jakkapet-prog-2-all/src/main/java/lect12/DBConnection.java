@@ -3,7 +3,6 @@ package lect12;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.Properties;
 
 public class DBConnection {
 	public Connection getConnection() {
@@ -43,5 +42,6 @@ public class DBConnection {
 		
 		System.out.println("Connected to database");
 		return connection;
+
 	}
 }

@@ -9,6 +9,7 @@ import java.io.PrintWriter;
 import java.util.ResourceBundle;
 
 import java.util.*;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -90,10 +91,12 @@ public class AddServlet extends HttpServlet {
 			double mark = Double.parseDouble(markStr);
 			char grade = Grader.gradeMark(mark);
 			Student student = new Student(id, nameStr, surnameStr, mark, grade);
+			
 			// create sql command
 			String addSql = SQLStudent.addStudentSQL(student);
 			// execute sql command
 			DBStudent.executeDB(addSql);
+
 			out.println("</br>");
 			out.println("Student added successfully</br>");
 		} catch (SQLException ex) {

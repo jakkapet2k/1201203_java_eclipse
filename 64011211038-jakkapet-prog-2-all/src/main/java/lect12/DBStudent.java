@@ -14,9 +14,10 @@ public class DBStudent {
 
 		Vector<Student> students = new Vector();
 
-		DBConnection connDB = new DBConnection();
+		ConnMariaDB connDB = new ConnMariaDB();
 		Connection con = connDB.getConnection();
 
+		
 		Statement stmnt = null;
 		if (con != null) {
 			stmnt = con.createStatement();
@@ -38,7 +39,8 @@ public class DBStudent {
 
 	public static void executeDB(String sql) throws SQLException {
 		System.out.println("StudentDB.addStudent()");
-		DBConnection connDB = new DBConnection();
+		
+		ConnMariaDB connDB = new ConnMariaDB();
 		Connection con = connDB.getConnection();
 
 		Statement stmnt = null;
